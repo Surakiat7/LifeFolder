@@ -2,6 +2,7 @@
   "expo": {
     "name": "LifeFolder",
     "slug": "LifeFolder",
+    "scheme": "lifefolder",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.LifeFolder"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +23,26 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.LifeFolder"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d2e042f6-d8a8-4fed-af63-5af427358d81"
+      }
+    },
+    "owner": "surakiat",
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-web-browser",
+        {
+          "experimentalLauncherActivity": true
+        }
+      ]
+    ]
   }
 }

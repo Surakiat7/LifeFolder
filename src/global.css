@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+@import 'uniwind';
+@import 'heroui-native/styles';
+
+/* Path to the heroui-native lib inside node_modules relative to global.css */
+@source '../node_modules/heroui-native/lib';
+
+/* Custom theme configuration */
+@theme {
+  /* Primary colors - matching our app theme */
+  --color-primary-50: #E6F2FF;
+  --color-primary-100: #B3D9FF;
+  --color-primary-200: #80BFFF;
+  --color-primary-300: #4DA6FF;
+  --color-primary-400: #1A8CFF;
+  --color-primary-500: #007AFF;
+  --color-primary-600: #0062CC;
+  --color-primary-700: #004A99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+
+  /* Success */
+  --color-success-500: #34C759;
+
+  /* Warning */
+  --color-warning-500: #FF9500;
+
+  /* Danger/Error */
+  --color-danger-500: #FF3B30;
+
+  /* Secondary */
+  --color-secondary-500: #5856D6;
+}
